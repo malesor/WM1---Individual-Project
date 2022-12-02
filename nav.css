@@ -1,0 +1,201 @@
+body,html {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/background1.png");
+  
+}
+
+.intro {
+font-size:x-large;
+text-align: center;
+position: relative;
+padding-top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: cornsilk;
+}
+
+.intro p {font-size: 20px;
+  margin-top: -20px;
+  }
+
+.butoni {width: 100%;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  text-align: center;
+  
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+  button{
+      width: 200px;
+      padding: 15px 0;
+      text-align: center;
+      margin: 20px 10px;
+      border-radius: 25px;
+      font-weight: bold;
+      border: 2px solid black;
+      background:transparent;
+      color: cornsilk;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      }
+
+  span{
+      background: rgba(255, 68, 0, 0.486);
+      height: 100%;
+      width: 0%;
+      border-radius: 25px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: 0.5s;
+      }
+
+  button:hover span{ width: 100%;}    
+          
+  button:hover{ border: none;}
+
+.social {margin-top: 13px;
+  margin-right: 10px;
+  float: right;}
+
+.header{position: fixed; top: 0; width: 100%; z-index: 1000;}
+
+.form-title {
+        background-image:linear-gradient(#00000000, #000000d2) ,url("images/27230.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+ .headerList2 {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: rgba(0, 0, 0, 0.397);
+          
+        }
+
+  .headerLine2 {
+          float: left;
+        }
+
+  .headerLine2 a {
+          display: block;
+          color: cornsilk;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+  .headerLine2 a:hover {
+          background-color: #111;
+        }
+
+        * {
+          box-sizing: border-box;
+        }
+
+        input[type=text], select{
+          width: 100%;
+          padding: 12px 20px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+          
+        }
+        
+        input[type=date]{
+          width: 100%;
+          padding: 12px 20px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        input[type=time]{
+          width: 100%;
+          padding: 12px 20px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+      
+        input[type=submit] {
+          background-color: orangered;
+          color: white;
+          padding: 10px 15px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-left: -245%;
+          margin-bottom: 15%;
+          margin-top: 120%;
+          width: 130%;
+          height: 5%;
+          position: static;
+        }
+        
+        input[type=submit]:hover {
+          background-color: white;
+          color: orangered;
+        }
+
+        .book2{
+          font-size: medium;
+          margin-left: 24%;
+          margin-bottom: 4%;
+          margin-top: -1%;
+          color: orangered;
+        }
+/* Make the box of the booking */
+        .container {
+          border-radius: 20px;
+          background-color: #e4e2e2;
+          padding: 50px;
+          text-align: middle;
+          position: relative;
+          width: 65%;
+          margin-bottom: 40px;
+          margin-left: 17%;
+          height: 80%;
+          margin-top: 200px;
+        }
+
+        .col-25 {
+          float: left;
+          justify-content: space-between;
+          width: 20%;
+          margin-top: 11px;
+          margin-left: 21%;
+          font-weight: 500;
+        }
+      .ro{margin-right: 200px;}
+        .row:after {
+          content: "";
+          display: flex;
+          clear: both;}
+
+          /* Scale nicely on screens and adjust width */
+        @media screen and (max-width: 300px) {
+          .col-25,input[type=submit] {
+            width: 100%;
+            height: 100%;
+            margin-top: 0;
+          }
+        @media screen and (max-width: 300px) {
+            .row,input[type=submit] {
+              width: 100%;
+              margin-bottom: 10%;
+              margin-left: -30%;
+            }
+         
+        }
